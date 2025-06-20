@@ -1,6 +1,5 @@
 .swiper {
   width: 100%;
-  /* padding: 0 16px; */
   box-sizing: border-box;
 }
 
@@ -27,13 +26,6 @@
   
   
   
-  /* @media (max-width: 767px) {
-    .swiper-slide.card {
-      width: 100% !important; /* показываем 1 карточку */
-      /* max-width: 100% !important;
-    }
-  } */ 
-  
 
 
   
@@ -44,7 +36,6 @@
   
   
   
-  /* Кнопка "more" скрыта по умолчанию */
   .slide-more {
     color: rgba(117, 87, 255, 1);
     font-size: 18px;
@@ -67,15 +58,6 @@
     
   }
   
-  
-  /* Показываем при наведении */
-  /* .swiper-slide:hover .slide-more {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    color: rgba(117, 87, 255, 1);
-    font-size: 18px;
-  } */
 
   .swiper-slide.card:hover .slide-more-wrapper {
     opacity: 1;
@@ -92,9 +74,9 @@
   .swiper-button-next {
     color: black;
     font-size: 24px;
-    z-index: 10;
+    z-index: 10px;
     cursor: pointer;
-    opacity: 1 !important;        /* полностью видимы */
+    opacity: 1 !important;   
     pointer-events: auto !important; 
   }
   .swiper-button-prev::after,
@@ -116,7 +98,6 @@
     height: 8px;
     background-color: rgba(117, 87, 255, 0.6);
     border-radius: 50%;
-    /* opacity: 0.7; */
     transition: all 0.3s ease;
   }
   
@@ -154,7 +135,7 @@
   .card img {
     margin: 0;
     padding: 0;
-    display: block; /* важно: убирает "пустоту" снизу у inline-элементов */
+    display: block; 
     max-width: 100%;
     height: auto;
   }
@@ -188,6 +169,16 @@ color: rgba(55, 48, 66, 1);
 margin-left: 30px;
 margin-top: 8px;
 
+}
+
+
+@media (min-width: 1200px) {
+  .swiper-button-prev img{
+    margin-left: -40px;
+  }
+  .swiper-button-next img{
+    margin-left: -230px;
+  }
 }
 
 

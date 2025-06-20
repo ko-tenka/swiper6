@@ -17,7 +17,7 @@
     height: auto;
   }
   
-  /* Меню по умолчанию — в строку, видно */
+
   .header__nav {
     margin-left: 394px;
     flex-grow: 1;
@@ -103,7 +103,7 @@
     margin-top: 2px;
   }
   
-  /* Бургер по умолчанию скрыт */
+
   .header__burger {
     display: none;
     background: none;
@@ -115,9 +115,7 @@
     width: 60px;
   }
   
-  /* Адаптив */
-  
-  /* На экранах меньше 1920px показываем бургер, меню скрываем */
+
   @media (max-width: 1200px) {
     .header__burger {
       display: block;

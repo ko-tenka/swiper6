@@ -13,21 +13,21 @@
   width: 100%;
 }
 
-/* Десктопный фон — по умолчанию */
+
 .hero__image--main {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Мобильный фон — скрыт по умолчанию */
+
 .hero__image--mobile {
   display: none;
   width: 100%;
   height: auto;
 }
 
-/* Контент */
+
 .hero__content {
   position: absolute;
   top: 160px;
@@ -79,10 +79,10 @@
   background-color: #554c66;
 }
 
-/* —————— АДАПТИВ —————— */
+
 
 @media (max-width: 768px) {
-  /* Показываем мобильный фон */
+
   .hero__image--main {
     display: none;
   }

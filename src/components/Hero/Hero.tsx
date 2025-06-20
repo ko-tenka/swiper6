@@ -1,7 +1,7 @@
 import './Hero.css';
 import Group1 from '../../../public/Group1.svg';
 import Group2 from '../../../public/Group2.svg';
-import Group11 from '../../../public/Group11.svg'; // мобильный фон
+import Group11 from '../../../public/Group11.svg'; 
 
 export default function Hero() {
   return (
