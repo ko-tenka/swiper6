@@ -30,6 +30,9 @@ export default function Features() {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        renderBullet: function (index, className) {
+          return `<span class="${className}"></span>`;
+        },
       },
       breakpoints: {
         0: {
@@ -46,7 +49,6 @@ export default function Features() {
   
     return () => swiper.destroy();
   }, []);
-  
 
   return (
     <div className="swiper">
@@ -99,7 +101,9 @@ export default function Features() {
         <div className="swiper-button-next">
           <img src={Frame14} alt="next" />
         </div>
-        <div className="swiper-pagination"></div>
+      </div>
+      <div className="swiper-pagination">
+        <div className="liquid-indicator"></div>
       </div>
     </div>
   );
