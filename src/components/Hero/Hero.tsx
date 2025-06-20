@@ -1,6 +1,7 @@
-import './Hero.css'
-import Group1 from '../../../public/Group1.svg'
-import Group2 from '../../../public/Group2.svg'
+import './Hero.css';
+import Group1 from '../../../public/Group1.svg';
+import Group2 from '../../../public/Group2.svg';
+import Group11 from '../../../public/Group11.svg'; // мобильный фон
 
 export default function Hero() {
   return (
@@ -8,7 +9,8 @@ export default function Hero() {
       <div className="hero__container">
         <div className="hero__image-wrapper">
           <img src={Group1} alt="Main background" className="hero__image hero__image--main" />
-          
+          <img src={Group11} alt="Mobile background" className="hero__image hero__image--mobile" />
+
           <div className="hero__content">
             <img src={Group2} alt="Overlay icon" className="hero__image hero__image--bg" />
             <h1 className="hero__title">A single platform for searching educational</h1>
@@ -19,9 +21,8 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
 
 
 

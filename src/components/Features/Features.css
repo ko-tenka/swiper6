@@ -1,61 +1,71 @@
-.swiper-container {
-    width: 100%;
-    height: auto;
-  }
+.features__container {
+  width: 470px;
+  margin-left: 160px;
+  margin-right: 126px;
+  margin-top: -16px;
+}
+
+.features__title {
+  font-size: 55px;
+  letter-spacing: -0.02em;
+  margin-bottom: 36px;
+}
+
+.features__text {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+}
+
+.highlight {
+  color: rgba(117, 87, 255, 1);
+  font-weight: 500;
+}
+
+.features__button {
+  display: inline-block;
+  padding: 23px 42px;
+  background-color: rgba(117, 87, 255, 1);
+  color: #fff;
+  border-radius: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.features__button:hover {
+  background-color: #554c66;
+}
+
+
+@media (max-width: 768px) {
+    .features__container {
+      width: auto;
+      margin: 0 20px;
+      margin-top: -55px;
+    }
   
-  .swiper-slide.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 20px;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
+    .features__title {
+      font-size: 41px;
+      letter-spacing: 0.02em;
+    }
   
-  .swiper-slide.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  }
+    .features__text {
+      font-size: 18px;
+      line-height: 24px;
+      line-height: 30px;
+      margin-top: -10px;
+      letter-spacing: 0.02em;
+    }
   
-  
-  /* Кнопка "more" скрыта по умолчанию */
-  .slide-more {
-    margin-top: 10px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(5px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    color: #007bff;
-    text-decoration: underline;
-  }
-  
-  /* Показываем при наведении */
-  .swiper-slide:hover .slide-more {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-  
-  .swiper-button-prev,
-  .swiper-button-next {
-    color: black;
-    font-size: 24px;
-    z-index: 10;
-    cursor: pointer;
-  }
-  
-  .swiper-pagination {
-    margin-top: 10px;
-  }
- 
-  .card {
-    background-color: #ffc0cb; /* красивый розовый */
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
+    .hero__button {
+        padding: 22px 40px;
+        font-size: 17px;
+        width: 130px;
+        text-align: center;
+      }
+    
+    }
+
   

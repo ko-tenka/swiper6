@@ -1,65 +1,138 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__container {
+  position: relative;
+  width: 100%;
+}
+
+.hero__image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Десктопный фон — по умолчанию */
+.hero__image--main {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Мобильный фон — скрыт по умолчанию */
+.hero__image--mobile {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+/* Контент */
 .hero__content {
   position: absolute;
-  top: 296px; 
-  left: 160px; 
-  /* z-index: 1; */
+  top: 160px;
+  left: 160px;
   max-width: 504px;
   color: white;
 }
 
+.hero__title {
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 59px;
+  letter-spacing: -0.02em;
+  width: 504px;
+  height: auto;
+  margin-top: 22px;
+}
+
+.hero__phone {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 25px;
+  display: inline-block;
+  margin-bottom: 23px;
+  color: white;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  line-height: 30px;
+}
+
+.hero__text {
+  font-size: 18px;
+  margin-bottom: 32px;
+  letter-spacing: -0.02em;
+}
+
+.hero__button {
+  display: inline-block;
+  padding: 25px 43px;
+  background-color: rgba(117, 87, 255, 1);
+  color: #fff;
+  border-radius: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.hero__button:hover {
+  background-color: #554c66;
+}
+
+/* —————— АДАПТИВ —————— */
+
+@media (max-width: 768px) {
+  /* Показываем мобильный фон */
+  .hero__image--main {
+    display: none;
+  }
+
+  .hero__image--mobile {
+    display: block;
+  }
+
+  .hero__content {
+    top: 335px;
+    left: 20px;
+    right: 20px;
+    max-width: unset;
+    
+  }
+
   .hero__title {
-    font-weight: 500;
-    font-size: 70px;
-    line-height: 59px;
-    letter-spacing: -0.02em; 
-    width: 504px;
-    height: 177px;
-    margin-top: 22px;
-    
-/* 
-    white-space: normal; 
-    word-break: break-word;
-    overflow-wrap: break-word;  */
-    
-    /* hyphens: auto; */
-    
+    font-size: 50px;
+    line-height: 36px;
+    width: auto;
+    margin-top: 20px;
+   font-weight: 500;
+   line-height: 40px;
+   letter-spacing: 0em;
+   line-height: 48px;
+
   }
-  
-  
-  
+
   .hero__phone {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 25px;
+    line-height: 24px;
     margin-top: 25px;
-
-    font-family: 'Mabry Pro', sans-serif;
-    display: inline-block;
-    margin-bottom: 23px;
-    color: rgba(255, 255, 255, 1);
-    text-decoration: none;
-    letter-spacing: -0.02em;
-    line-height: 30px;
+    margin-bottom: 25px;
+    letter-spacing: 0.02em;
   }
 
-  
   .hero__text {
     font-size: 18px;
-    margin-bottom: 32px;
-    letter-spacing: -0.02em;
+    margin-bottom: 30px;
+    letter-spacing: 0.02em;
   }
-  
+
   .hero__button {
-    display: inline-block;
-    padding: 25px 43px;
-    background-color: rgba(117, 87, 255, 1);
-    color: #fff;
-    border-radius: 40px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background 0.3s ease;
+    padding: 22px 40px;
+    font-size: 17px;
+    width: 130px;
+    text-align: center;
   }
-  
-  .hero__button:hover {
-    background-color: #554c66;
+
+  .hero__image--bg{
+    width: 230px;
   }
-  
+}
