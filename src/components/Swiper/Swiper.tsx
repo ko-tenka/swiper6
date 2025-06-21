@@ -37,17 +37,30 @@ export default function Features() {
       breakpoints: {
         0: {
           slidesPerView: 1,
+          spaceBetween: 30,
         },
         768: {
           slidesPerView: 2,
+          spaceBetween: 35,
         },
         1200: {
           slidesPerView: 3,
+          spaceBetween: 40,
         },
       },
     });
+
+    // Обработчик изменения размера окна
+    const handleResize = () => {
+      swiper.update();
+    };
+
+    window.addEventListener('resize', handleResize);
   
-    return () => swiper.destroy();
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      swiper.destroy();
+    };
   }, []);
 
   return (
