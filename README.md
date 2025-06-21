@@ -1,54 +1,97 @@
-# React + TypeScript + Vite
+# Educational Platform Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Современная адаптивная landing page для образовательной платформы, созданная с использованием React, TypeScript и Vite.
 
-Currently, two official plugins are available:
+## 🚀 Описание проекта
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Этот проект представляет собой одностраничный сайт для образовательной платформы, которая помогает пользователям найти подходящий университет. Сайт включает в себя:
 
-## Expanding the ESLint configuration
+- **Hero секцию** с основным предложением и контактной информацией
+- **Features секцию** с описанием преимуществ платформы
+- **Swiper компонент** с интерактивными карточками услуг
+- **Адаптивный дизайн** для всех устройств
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠 Технологии
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **React 19.1.0** - основная библиотека для создания пользовательского интерфейса
+- **TypeScript** - типизированный JavaScript для лучшей разработки
+- **Vite** - быстрый инструмент сборки
+- **Swiper** - библиотека для создания слайдеров
+- **CSS3** - стилизация с использованием современных CSS возможностей
+
+## 📱 Адаптивность
+
+Проект полностью адаптивен и оптимизирован для следующих устройств:
+
+- **Большие экраны (1200px+)** - отображение 3 карточек в Swiper
+- **Средние экраны (768px-1199px)** - отображение 2 карточек в Swiper
+- **Мобильные устройства (до 767px)** - отображение 1 карточки в Swiper
+
+
+## 🚀 Установка и запуск
+
+### Предварительные требования
+
+- Node.js (версия 16 или выше)
+- npm или yarn
+
+### Установка зависимостей
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Запуск в режиме разработки
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm run dev
 ```
+
+Приложение будет доступно по адресу: `http://localhost:5173`
+
+
+## 📋 Доступные скрипты
+
+- `npm run dev` - запуск сервера разработки
+- `npm run build` - сборка проекта для продакшена
+- `npm run preview` - предварительный просмотр сборки
+
+## 🎨 Особенности дизайна
+
+### Анимации
+
+- Плавные переходы при наведении на карточки
+- Анимации появления элементов
+- Интерактивные эффекты в Swiper
+
+### Типографика
+
+- Современные шрифты с оптимальной читаемостью
+- Адаптивные размеры шрифтов для разных экранов
+- Правильные межстрочные интервалы
+
+## 📱 Компоненты
+
+### Header
+
+- Адаптивная навигация
+- Бургер-меню для мобильных устройств
+- Кнопки действий (вход/регистрация)
+
+### Hero
+
+- Главное предложение платформы
+- Контактная информация
+- Призыв к действию
+
+### Features
+
+- Описание преимуществ платформы
+- Кнопка для получения дополнительной информации
+
+### Swiper
+
+- Интерактивные карточки услуг
+- Навигация стрелками и пагинацией
+- Адаптивное количество карточек
+
